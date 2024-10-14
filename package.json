@@ -2,11 +2,24 @@
   "name": "taller-de-express",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./server.js",
+    "dev": "nodemon ./server.js",
+    "dataTienda": "node ./models/dataFirstTime/dataTienda.js",
+    "dataProducto": "node ./models/dataFirstTime/dataProducto.js",
+    "dataEmpleado": "node ./models/dataFirstTime/dataEmpleado.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
 }
