@@ -33,3 +33,30 @@ npm run dataProducto
 ~~~
 npm run dataEmpleado
 ~~~
+
+5.- Ejecutamos los siguientes Comando por Consola para Iniciar el Servidor
+~~~
+npm run dev
+~~~
+
+6.- Consultas en Postman
+
+- Consulta de todas las Tiendas
+~~~
+http://localhost:8080/api/tiendas/all
+~~~
+
+- Consulta por ID
+~~~
+http://localhost:8080/api/tiendas/id/{valorID}
+~~~
+
+- Consulta por Nombre de la Tienda
+~~~
+http://localhost:8080/api/tiendas/nombre/{valorNombre}
+~~~
+
+- Consulta por Direccion de la Tienda
+~~~
+http://localhost:8080/api/tiendas/direccion/{valorDireccion}
+~~~

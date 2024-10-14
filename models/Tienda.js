@@ -4,7 +4,7 @@ let collection = 'tiendas'
 let schema = new Schema({
     id: { type: Number, required: true },
     Nombre: { type: String, required: true },
-    Dirección: { type: String, required: true},
+    Direccion: { type: String, required: true},
     Teléfono: { type: Number, required: true },
 },{
     timestamps: true,
