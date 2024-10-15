@@ -10,6 +10,7 @@
 -   [5 - Ejecutamos por Consola para Iniciar el Servidor](#5---Ejecutamos-por-Consola-para-Iniciar-el-Servidor)
 -   [6 - Consultas en Postman de Tiendas](#6---Consultas-en-Postman-de-Tiendas)
 -   [7 - Consultas en Postman de Empleado](#7---Consultas-en-Postman-de-Empleado)
+-   [8 - Consultas en Postman de Producto](#8---Consultas-en-Postman-de-Producto)
 
 
 ---
@@ -118,4 +119,30 @@ http://localhost:8080/api/empleados/nombre/{valorNombre}
 - Consulta por Cargo del Empleado
 ~~~
 http://localhost:8080/api/empleados/cargo/{valorDireccion}
+~~~
+
+
+---
+
+
+### *8 - Consultas en Postman de Producto**
+
+- Consulta de todos los Producto
+~~~
+http://localhost:8080/api/productos/all
+~~~
+
+- Consulta por ID
+~~~
+http://localhost:8080/api/productos/id/{valorID}
+~~~
+
+- Consulta por Marca del Producto
+~~~
+http://localhost:8080/api/productos/marca/{valorNombre}
+~~~
+
+- Consulta por Tipo del Producto
+~~~
+http://localhost:8080/api/productos/tipo/{valorDireccion}
 ~~~

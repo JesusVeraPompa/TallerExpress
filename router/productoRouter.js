@@ -1,16 +1,16 @@
 import { Router } from 'express'
 import {
-    allTienda,
-    tiendasByID,
-    tiendasByDireccion,
-    tiendasByNombre,
-} from '../controllers/tienda/readTienda.js'
+    allProducto,
+    productosByID,
+    productosByMarca,
+    productosByTipo,
+} from '../controllers/producto/readProducto.js'
 
-const routerTienda = Router()
+const routerProducto = Router()
 
-routerTienda.get('/all', allTienda)
-routerTienda.get('/id/:idValue', tiendasByID)
-routerTienda.get('/direccion/:direccionValue', tiendasByDireccion)
-routerTienda.get('/nombre/:nombreValue', tiendasByNombre)
+routerProducto.get('/all', allProducto)
+routerProducto.get('/id/:idValue', productosByID)
+routerProducto.get('/marca/:marcaValue', productosByMarca)
+routerProducto.get('/tipo/:tipoValue', productosByTipo)
 
-export default routerTienda
+export default routerProducto
