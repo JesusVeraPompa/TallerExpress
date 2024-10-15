@@ -9,6 +9,7 @@
 -   [4 - Ejecutamos por Consola para Subir los Datos a la Base de Datos](#4---Ejecutamos-por-Consola-para-Subir-los-Datos-a-la-Base-de-Datos)
 -   [5 - Ejecutamos por Consola para Iniciar el Servidor](#5---Ejecutamos-por-Consola-para-Iniciar-el-Servidor)
 -   [6 - Consultas en Postman de Tiendas](#6---Consultas-en-Postman-de-Tiendas)
+-   [7 - Consultas en Postman de Empleado](#7---Consultas-en-Postman-de-Empleado)
 
 
 ---
@@ -91,4 +92,30 @@ http://localhost:8080/api/tiendas/nombre/{valorNombre}
 - Consulta por Direccion de la Tienda
 ~~~
 http://localhost:8080/api/tiendas/direccion/{valorDireccion}
+~~~
+
+
+---
+
+
+### *7 - Consultas en Postman de Empleado**
+
+- Consulta de todos los Empleado
+~~~
+http://localhost:8080/api/empleados/all
+~~~
+
+- Consulta por ID
+~~~
+http://localhost:8080/api/empleados/id/{valorID}
+~~~
+
+- Consulta por Nombre del Empleado
+~~~
+http://localhost:8080/api/empleados/nombre/{valorNombre}
+~~~
+
+- Consulta por Cargo del Empleado
+~~~
+http://localhost:8080/api/empleados/cargo/{valorDireccion}
 ~~~
