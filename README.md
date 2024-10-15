@@ -1,6 +1,5 @@
 # **Taller Express - BackEnd**
 
-
 ## **Pasos para Visualizar el Proyecto**
 
 -   [1 - Ejecutamos por Consola para Limpiar la memoria caché en NPM](#1---Ejecutamos-por-Consola-para-Limpiar-la-memoria-caché-en-NPM)
@@ -12,137 +11,144 @@
 -   [7 - Consultas en Postman de Empleado](#7---Consultas-en-Postman-de-Empleado)
 -   [8 - Consultas en Postman de Producto](#8---Consultas-en-Postman-de-Producto)
 
-
 ---
-
 
 ### **1 - Ejecutamos por Consola para Limpiar la memoria caché en NPM**
-~~~
-npm cache clear --force
-~~~
 
+```
+npm cache clear --force
+```
 
 ---
-
 
 ### **2 - Ejecutamos por Consola para Instalar las Dependencias**
-~~~
-npm install
-~~~
 
+```
+npm install
+```
 
 ---
 
-
 ### **3 - Crear un Archivo en el directorio Raiz llamado env y agregar adentro del archivo lo siguiente**
+
 (.env)
-~~~
+
+```
 PORT = 8080
 // quitar {} y completa los datos
 URI_MONGO = "mongodb+srv://{usuarioMongo}:{contraseña}@{nombreBaseDatos}.w9lh8.mongodb.net/taller_express"
-~~~
-
+```
 
 ---
-
 
 ### **4 - Ejecutamos por Consola para Subir los Datos a la Base de Datos**
-- Cargamos los datos de la Tienda y luego tecleamos Control+C y luego S
-~~~
-npm run dataTienda
-~~~
-- Cargamos los datos de la Producto y luego tecleamos Control+C y luego S
-~~~
-npm run dataProducto
-~~~
-- Cargamos los datos de la Empleado y luego tecleamos Control+C y luego S
-~~~
-npm run dataEmpleado
-~~~
 
+-   Cargamos los datos de la Tienda y luego tecleamos Control+C y luego S
+
+```
+npm run dataTienda
+```
+
+-   Cargamos los datos de la Producto y luego tecleamos Control+C y luego S
+
+```
+npm run dataProducto
+```
+
+-   Cargamos los datos de la Empleado y luego tecleamos Control+C y luego S
+
+```
+npm run dataEmpleado
+```
 
 ---
-
 
 ### **5 - Ejecutamos por Consola para Iniciar el Servidor**
-~~~
-npm run dev
-~~~
 
+```
+npm run dev
+```
 
 ---
-
 
 ### **6 - Consultas en Postman de Tiendas**
 
-- Consulta de todas las Tiendas
-~~~
+-   Consulta de todas las Tiendas
+
+```
 http://localhost:8080/api/tiendas/all
-~~~
+```
 
-- Consulta por ID
-~~~
+-   Consulta por ID
+
+```
 http://localhost:8080/api/tiendas/id/{valorID}
-~~~
+```
 
-- Consulta por Nombre de la Tienda
-~~~
+-   Consulta por Nombre de la Tienda
+
+```
 http://localhost:8080/api/tiendas/nombre/{valorNombre}
-~~~
+```
 
-- Consulta por Direccion de la Tienda
-~~~
+-   Consulta por Direccion de la Tienda
+
+```
 http://localhost:8080/api/tiendas/direccion/{valorDireccion}
-~~~
-
+```
 
 ---
 
+### **7 - Consultas en Postman de Empleado**
 
-### *7 - Consultas en Postman de Empleado**
+-   Consulta de todos los Empleado
 
-- Consulta de todos los Empleado
-~~~
+```
 http://localhost:8080/api/empleados/all
-~~~
+```
 
-- Consulta por ID
-~~~
+-   Consulta por ID
+
+```
 http://localhost:8080/api/empleados/id/{valorID}
-~~~
+```
 
-- Consulta por Nombre del Empleado
-~~~
+-   Consulta por Nombre del Empleado
+
+```
 http://localhost:8080/api/empleados/nombre/{valorNombre}
-~~~
+```
 
-- Consulta por Cargo del Empleado
-~~~
+-   Consulta por Cargo del Empleado
+
+```
 http://localhost:8080/api/empleados/cargo/{valorDireccion}
-~~~
-
+```
 
 ---
 
+### **8 - Consultas en Postman de Producto**
 
-### *8 - Consultas en Postman de Producto**
+-   Consulta de todos los Producto
 
-- Consulta de todos los Producto
-~~~
+```
 http://localhost:8080/api/productos/all
-~~~
+```
 
-- Consulta por ID
-~~~
+-   Consulta por ID
+
+```
 http://localhost:8080/api/productos/id/{valorID}
-~~~
+```
 
-- Consulta por Marca del Producto
-~~~
+-   Consulta por Marca del Producto
+
+```
 http://localhost:8080/api/productos/marca/{valorNombre}
-~~~
+```
 
-- Consulta por Tipo del Producto
-~~~
+-   Consulta por Tipo del Producto
+
+```
 http://localhost:8080/api/productos/tipo/{valorDireccion}
-~~~
+```
