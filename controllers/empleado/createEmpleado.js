@@ -1,30 +1,30 @@
 import Empleado from '../../models/Empleado.js'
 
-let create = async (req, res) => {
+let create = async (req, res, next) => {
     try {
         let valueEmpleado = req.body
-        let all = await Empleado.create(valueEmpleado)
+        let createEmpleado = await Empleado.create(valueEmpleado)
         return res.status(201).json({
-            response: all,
+            success: true,
+            message: 'Empleado creado con EXITO',
+            data: createEmpleado,
         })
     } catch (error) {
-        return res.status(500).json({
-            response: error,
-        })
+        next(error)
     }
 }
 
 let createAll = async (req, res) => {
     try {
         let valueEmpleado = req.body
-        let all = await Empleado.insertMany(valueEmpleado)
+        let insertManyEmpleado = await Empleado.insertMany(valueEmpleado)
         return res.status(201).json({
-            response: all,
+            success: true,
+            message: 'Todos los Empleados creados con EXITO',
+            data: insertManyEmpleado,
         })
     } catch (error) {
-        return res.status(500).json({
-            response: error,
-        })
+        next(error)
     }
 }
 

@@ -3,28 +3,28 @@ import Producto from '../../models/Producto.js'
 let create = async (req, res) => {
     try {
         let valueProducto = req.body
-        let all = await Producto.create(valueProducto)
+        let createProducto = await Producto.create(valueProducto)
         return res.status(201).json({
-            response: all,
+            success: true,
+            message: 'Producto creado con EXITO',
+            data: createProducto,
         })
     } catch (error) {
-        return res.status(500).json({
-            response: error,
-        })
+        next(error)
     }
 }
 
 let createAll = async (req, res) => {
     try {
         let valueProducto = req.body
-        let all = await Producto.insertMany(valueProducto)
+        let insertManyProducto = await Producto.insertMany(valueProducto)
         return res.status(201).json({
-            response: all,
+            success: true,
+            message: 'Todos los Productos creados con EXITO',
+            data: insertManyProducto,
         })
     } catch (error) {
-        return res.status(500).json({
-            response: error,
-        })
+        next(error)
     }
 }
 
