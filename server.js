@@ -6,6 +6,7 @@ import morgan from 'morgan'
 import routerIndex from './router/index.js'
 import not_found_handler from './middlewares/not_found_handler.js'
 import error_handler from './middlewares/error_handler.js'
+import searchIP from './middlewares/searchIP.js'
 
 const server = express()
 
@@ -17,6 +18,8 @@ server.use(express.json()) // Permite trabajar con JSON
 server.use(express.urlencoded({ extended: true })) // Captura consultas complejas
 server.use(cors()) // Habilita CORS para orígenes cruzados
 server.use(morgan('dev')) // Registra peticiones HTTP
+
+server.use(searchIP)
 
 server.use('/api', routerIndex)
 server.use(not_found_handler)

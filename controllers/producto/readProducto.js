@@ -11,7 +11,7 @@ let allProducto = async (req, res) => {
                 data: resultado,
             })
         } else {
-            return res.status(404).json({
+            return res.status(200).json({
                 success: false,
                 message: `No se encontro Registro de Productos en la Base de Datos`,
                 registers_found: `${resultado.length}`,
@@ -35,7 +35,7 @@ let productosByID = async (req, res) => {
                 data: resultado,
             })
         } else {
-            return res.status(404).json({
+            return res.status(200).json({
                 success: false,
                 message: `No se encontro Registro en la Base de Datos con: ${idValue}`,
                 registers_found: `${resultado.length}`,

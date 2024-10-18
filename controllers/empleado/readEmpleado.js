@@ -83,7 +83,7 @@ let empleadosByCargo = async (req, res) => {
                 data: resultado,
             })
         } else {
-            return res.status(404).json({
+            return res.status(200).json({
                 success: false,
                 message: `No se encontro Registro en la Base de Datos con: ${cargoValue}`,
                 registers_found:`${resultado.length}`,
