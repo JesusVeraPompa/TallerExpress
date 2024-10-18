@@ -1,3 +1,5 @@
+// Middlewares para saber la Ubicacion de donde realizan la consulta HTTP
+
 function searchIP(req, res, next) {
     fetch('https://api.ipify.org?format=json')
         .then((response) => response.json())

@@ -1,4 +1,4 @@
-const error_handler = (error, req, res, next) => {
+const error_handler_response = (error, req, res, next) => {
     console.log(error)
     if (error.status === 400) {
         return res.status(400).json({
@@ -17,4 +17,4 @@ const error_handler = (error, req, res, next) => {
     }
 }
 
-export default error_handler
+export default error_handler_response
