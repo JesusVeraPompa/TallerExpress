@@ -59,7 +59,7 @@ let productosByMarca = async (req, res) => {
                 data: resultado,
             })
         } else {
-            return res.status(404).json({
+            return res.status(200).json({
                 success: false,
                 message: `No se encontro Registro en la Base de Datos con: ${marcaValue}`,
                 registers_found: `${resultado.length}`,
@@ -83,7 +83,7 @@ let productosByTipo = async (req, res) => {
                 data: resultado,
             })
         } else {
-            return res.status(404).json({
+            return res.status(200).json({
                 success: false,
                 message: `No se encontro Registro en la Base de Datos con: ${tipoValue}`,
                 registers_found: `${resultado.length}`,

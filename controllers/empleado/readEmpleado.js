@@ -11,7 +11,7 @@ let allEmpleado = async (req, res) => {
                 data: resultado,
             })
         } else {
-            return res.status(404).json({
+            return res.status(200).json({
                 success: false,
                 message: `No se encontro Registro de Empleados en la Base de Datos`,
                 registers_found:`${resultado.length}`,
@@ -35,7 +35,7 @@ let empleadosByID = async (req, res) => {
                 data: resultado,
             })
         } else {
-            return res.status(404).json({
+            return res.status(200).json({
                 success: false,
                 message: `No se encontro Registro en la Base de Datos con: ${idValue}`,
                 registers_found:`${resultado.length}`,
@@ -59,7 +59,7 @@ let empleadosByNombre = async (req, res) => {
                 data: resultado,
             })
         } else {
-            return res.status(404).json({
+            return res.status(200).json({
                 success: false,
                 message: `No se encontro Registro en la Base de Datos con: ${nombreValue}`,
                 registers_found:`${resultado.length}`,
