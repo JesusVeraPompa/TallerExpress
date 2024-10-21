@@ -14,7 +14,7 @@ let create = async (req, res, next) => {
     }
 }
 
-let createAll = async (req, res) => {
+let createAll = async (req, res,next) => {
     try {
         let valueEmpleado = req.body
         let insertManyEmpleado = await Empleado.insertMany(valueEmpleado)
